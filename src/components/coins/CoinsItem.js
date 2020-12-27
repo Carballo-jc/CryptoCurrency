@@ -24,7 +24,6 @@ const CoinsItem = ({ item, onPress }) => {
       <View style={style.row}>
         <Text style={style.symbolText}>{item.symbol}</Text>
         <Text style={style.nameText}>{item.name}</Text>
-        {/* <Text style={style.priceText}>{item.price_usd}</Text> */}
       </View>
       <View style={style.row}>
         <View style={style.column}>
