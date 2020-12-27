@@ -24,10 +24,17 @@ const CoinsItem = ({ item, onPress }) => {
       <View style={style.row}>
         <Text style={style.symbolText}>{item.symbol}</Text>
         <Text style={style.nameText}>{item.name}</Text>
-        <Text style={style.priceText}>{item.price_usd}</Text>
+        {/* <Text style={style.priceText}>{item.price_usd}</Text> */}
       </View>
       <View style={style.row}>
-        <Text style={style.percentText}>{item.percent_change_1h}</Text>
+        <View style={style.column}>
+          <Text style={style.priceText}>{`$${item.price_usd}`}</Text>
+          <View
+            style={item.percent_change_1h > 0 ? style.rowGreen : style.rowRed}
+          >
+            <Text style={style.percentText}>{item.percent_change_1h}</Text>
+          </View>
+        </View>
         <Image style={style.imgIcon} source={getImgArrow()} />
       </View>
     </Pressable>
@@ -51,6 +58,25 @@ const style = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 16,
     marginRight: 12,
+  },
+  column: {
+    flexDirection: "column",
+  },
+  rowGreen: {
+    flexDirection: "row",
+    marginLeft: 10,
+    marginTop: 5,
+    width: 70,
+    height: 20,
+    backgroundColor: colors.green,
+  },
+  rowRed: {
+    flexDirection: "row",
+    marginLeft: 10,
+    marginTop: 5,
+    width: 70,
+    height: 20,
+    backgroundColor: colors.red,
   },
   nameText: {
     color: "#fff",
