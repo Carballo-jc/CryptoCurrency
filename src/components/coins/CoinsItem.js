@@ -49,7 +49,7 @@ const style = StyleSheet.create({
   symbolText: {
     color: "#fff",
     fontWeight: "bold",
-    fontSize: 16,
+    fontSize: 18,
     marginRight: 12,
   },
   nameText: {

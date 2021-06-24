@@ -1,6 +1,6 @@
 const colors = {
   blackPearl: "#20252c",
-  charade: "#272c35",
+  charade: "#253665",
   zircon: "#e0e0e0",
   white: "#fff",
   picton: "#3c6fc8",

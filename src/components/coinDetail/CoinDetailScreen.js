@@ -88,13 +88,13 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.charade,
   },
   row: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   subHeader: {
-    backgroundColor: 'rgba(0,0,0,0.1)',
+    backgroundColor: "rgba(0,0,0,0.1)",
     padding: 16,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   iconImg: {
     width: 25,
@@ -102,8 +102,8 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 16,
-    fontWeight: 'bold',
-    color: '#fff',
+    fontWeight: "bold",
+    color: "#fff",
     marginLeft: 8,
   },
   section: {
@@ -121,27 +121,27 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   itemText: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 14,
   },
   sectionText: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 14,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   marketTitle: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 16,
     marginBottom: 16,
     marginLeft: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   btnFavorite: {
     padding: 8,
     borderRadius: 8,
   },
   btnFavoriteText: {
-    color: '#fff',
+    color: "#fff",
   },
   btnFavoriteAdd: {
     backgroundColor: Colors.picton,
